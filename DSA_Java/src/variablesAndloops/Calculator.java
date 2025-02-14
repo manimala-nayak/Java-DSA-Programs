@@ -1,4 +1,4 @@
-package com.variablesandloops.practice;
+package variablesAndloops;
 
 import java.util.Scanner;
 
