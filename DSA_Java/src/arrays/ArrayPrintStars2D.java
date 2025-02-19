@@ -3,7 +3,7 @@ package arrays;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class ArrayStars {
+public class ArrayPrintStars2D {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
@@ -17,28 +17,18 @@ public class ArrayStars {
 			{
 				//System.out.println("Row is "+row+"Col is "+col);
 				if((row == 0 && col == 1) || row == 2 && col == 1)
-					arr[row][col]="";
+					arr[row][col]=" ";
 				
 				else
 					arr[row][col] = star;
 			}
-			//or second method
-			
 		}
-		/*
-		 * //with toString 
-		 * for(int i=0;i<arr.length;i++) {
-		 * System.out.println(Arrays.toString(arr[i]));}
-		 */
-		
-		/*
-		 * //foreach loop for(String[] k : arr) System.out.println(Arrays.toString(k));
-		 */
-		
-		//deepString
-		System.out.print(Arrays.deepToString(arr));
-		
-		
-	}
+
+		 for (int i = 0; i < arr.length; i++) {  // Iterate over rows
+	            for (int j = 0; j < arr[i].length; j++) { // Iterate over columns
+	                System.out.print(arr[i][j] + " ");
+	            }
+	            System.out.println();
+	}}
 
 }
